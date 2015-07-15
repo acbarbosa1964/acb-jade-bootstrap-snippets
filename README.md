@@ -503,5 +503,3 @@ A collection of [Bootstrap](http://getbootstrap.com/) snippets for [Brackets](ht
 	bs3navbarinverse
 	bs3navbarlink
 	bs3navbarlinks
-
-
