@@ -1404,87 +1404,271 @@ define(function (require, exports, module) {
     
     
     // Table
-    
-	snippets.bs3tablebordered = '<table class="table table-bordered table-hover">\n' +
-                                '	<thead>\n' +
-                                '		<tr>\n' +
-                                '			<th></th>\n' +
-                                '		</tr>\n' +
-                                '	</thead>\n' +
-                                '	<tbody>\n' +
-                                '		<tr>\n' +
-                                '			<td></td>\n' +
-                                '		</tr>\n' +
-                                '	</tbody>\n' +
-                                '</table>\n';
-    
-	snippets.bs3tablecondensed = '<table class="table table-condensed table-hover">\n' +
-                                 '	<thead>\n' +
-                                 '		<tr>\n' +
-                                 '			<th></th>\n' +
-                                 '		</tr>\n' +
-                                 '	</thead>\n' +
-                                 '	<tbody>\n' +
-                                 '		<tr>\n' +
-                                 '			<td></td>\n' +
-                                 '		</tr>\n' +
-                                 '	</tbody>\n' +
-                                 '</table>\n';
-    
-	snippets.bs3tablehover = '<table class="table table-hover">\n' +
-                             '	<thead>\n' +
-                             '		<tr>\n' +
-                             '			<th></th>\n' +
-                             '		</tr>\n' +
-                             '	</thead>\n' +
-                             '	<tbody>\n' +
-                             '		<tr>\n' +
-                             '			<td></td>\n' +
-                             '		</tr>\n' +
-                             '	</tbody>\n' +
-                             '</table>\n';
+
+    snippets.bs3table = '<table class="table">\n' +
+                        '    <thead>\n' +
+                        '      <tr>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '      </tr>\n' +
+                        '    </thead>\n' +
+                        '    <tbody>\n' +
+                        '      <tr>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '      </tr>\n' +
+                        '      <tr>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '      </tr>\n' +
+                        '    </tbody>\n' +
+                        '  </table>\n';
+
+    snippets.bs3tablehover = '<table class="table table-hover">\n' +
+                        '    <thead>\n' +
+                        '      <tr>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '        <th>[Title]</th>\n' +
+                        '      </tr>\n' +
+                        '    </thead>\n' +
+                        '    <tbody>\n' +
+                        '      <tr>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '      </tr>\n' +
+                        '      <tr>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '        <td>[data]</td>\n' +
+                        '      </tr>\n' +
+                        '    </tbody>\n' +
+                        '  </table>\n';
+
+
+	snippets.bs3tablebordered = '<table class="table table-bordered">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
+
+	snippets.bs3tableborderedhover = '<table class="table table-bordered table-hover">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
+	snippets.bs3tablecondensed = '<table class="table table-condensed">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
+	snippets.bs3tablecondensedhover = '<table class="table table-condensed table-hover">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
     
 	snippets.bs3tableresponsive = '<div class="table-responsive">\n' +
+                                  '	<table class="table">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n' +
+                                  '</div>\n';
+
+	snippets.bs3tableresponsivehover = '<div class="table-responsive">\n' +
                                   '	<table class="table table-hover">\n' +
-                                  '		<thead>\n' +
-                                  '			<tr>\n' +
-                                  '				<th></th>\n' +
-                                  '			</tr>\n' +
-                                  '		</thead>\n' +
-                                  '		<tbody>\n' +
-                                  '			<tr>\n' +
-                                  '				<td></td>\n' +
-                                  '			</tr>\n' +
-                                  '		</tbody>\n' +
-                                  '	</table>\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n' +
                                   '</div>\n';
     
-	snippets.bs3tablestriped = '<table class="table table-striped table-hover">\n' +
-                               '	<thead>\n' +
-                               '		<tr>\n' +
-                               '			<th></th>\n' +
-                               '		</tr>\n' +
-                               '	</thead>\n' +
-                               '	<tbody>\n' +
-                               '		<tr>\n' +
-                               '			<td></td>\n' +
-                               '		</tr>\n' +
-                               '	</tbody>\n' +
-                               '</table>\n';
-    
-	snippets.bs3table = '<table class="table table-hover">\n' +
-                        '	<thead>\n' +
-                        '		<tr>\n' +
-                        '			<th></th>\n' +
-                        '		</tr>\n' +
-                        '	</thead>\n' +
-                        '	<tbody>\n' +
-                        '		<tr>\n' +
-                        '			<td></td>\n' +
-                        '		</tr>\n' +
-                        '	</tbody>\n' +
-                        '</table>\n';
-    
+    snippets.bs3tablestriped = '<table class="table table-striped">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
+
+	snippets.bs3tablestripedhover = '<table class="table table-striped table-hover">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '        <td>[data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
+
+	snippets.bs3tablecontextual = '<table class="table">\n' +
+                               '    <thead>\n' +
+                               '      <tr>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '        <th>[Title]</th>\n' +
+                               '      </tr>\n' +
+                               '    </thead>\n' +
+                               '    <tbody>\n' +
+                               '      <tr class="active">\n' +
+                               '        <td>[active data]</td>\n' +
+                               '        <td>[active data]</td>\n' +
+                               '        <td>[active data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr class="success">\n' +
+                               '        <td>[success data]</td>\n' +
+                               '        <td>[success data]</td>\n' +
+                               '        <td>[success data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr class="info">\n' +
+                               '        <td>[info data]</td>\n' +
+                               '        <td>[info data]</td>\n' +
+                               '        <td>[info data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr class="warning">\n' +
+                               '        <td>[warning data]</td>\n' +
+                               '        <td>[warning data]</td>\n' +
+                               '        <td>[warning data]</td>\n' +
+                               '      </tr>\n' +
+                               '      <tr class="danger">\n' +
+                               '        <td>[danger data]</td>\n' +
+                               '        <td>[danger data]</td>\n' +
+                               '        <td>[danger data]</td>\n' +
+                               '      </tr>\n' +
+                               '    </tbody>\n' +
+                               '  </table>\n';
     
     // Tabs
     

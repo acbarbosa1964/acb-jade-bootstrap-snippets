@@ -494,12 +494,68 @@ A collection of [Bootstrap](http://getbootstrap.com/) snippets for [Brackets](ht
 	bs3modalstruct
 
 ### Navigation
+    
+    snippets.bs3navbarbasic
+	snippets.bs3navbarbrand
+	snippets.bs3navbarfixedbottom
+	snippets.bs3navbarfixedtop
+	snippets.bs3navbarform
+	snippets.bs3navbarinverse
+	snippets.bs3navbarlink
+	snippets.bs3navbarlinks
+	snippets.bs3navbarresponsive
+	snippets.bs3navbarstatictop
+	snippets.bs3navbartext
+	snippets.bs3navbar
 
-	bs3navbarbasic
-	bs3navbarbrand
-	bs3navbarfixedbottom
-	bs3navbarfixedtop
-	bs3navbarform
-	bs3navbarinverse
-	bs3navbarlink
-	bs3navbarlinks
+### Page Header
+    
+    snippets.bs3pageheader
+    
+### Pagination
+    
+	snippets.bs3pageraligned
+	snippets.bs3pager
+	snippets.bs3paginationlarge
+	snippets.bs3paginationsmall
+	snippets.bs3pagination
+    
+### Panels
+    
+	snippets.bs3paneldanger
+	snippets.bs3panelfooter
+	snippets.bs3panelheading
+	snippets.bs3panelinfo
+	snippets.bs3panelprimary
+	snippets.bs3panelsuccess
+	snippets.bs3paneltable
+	snippets.bs3panelwarning
+	snippets.bs3panel
+    
+### Table 
+    
+    snippets.bs3table
+    snippets.bs3tablehover
+	snippets.bs3tablebordered
+	snippets.bs3tableborderedhover
+	snippets.bs3tablecondensed
+	snippets.bs3tablecondensedhover
+	snippets.bs3tableresponsive
+	snippets.bs3tableresponsivehover
+    snippets.bs3tablestriped
+	snippets.bs3tablestripedhover
+	snippets.bs3tablecontextual
+    
+### Tabs
+    
+    snippets.bs3tabs
+    
+### HTML5 Tamplate
+    
+    snippets.html5template
+    
+### Wells
+
+    snippets.bs3welllg
+	snippets.bs3wellsm
+	snippets.bs3well
