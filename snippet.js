@@ -1690,6 +1690,26 @@ define(function (require, exports, module) {
                        '    </div>\n' +
                        '</div>\n';
     
+    snippets.tabhover = '    <!-- Nav pills -->\n' +
+                        '    <ul class="nav nav-pills">\n' +
+                        '        <li class="active"><a href="#tab-1" data-toggle="tab">Tab 1</a>\n' +
+                        '        </li>\n' +
+                        '        <li><a href="#tab-2" data-toggle="tab">Tab 2</a>\n' +
+                        '        </li>\n' +
+                        '        <li><a href="#tab-3" data-toggle="tab">Tab 3</a>\n' +
+                        '        </li>\n' +
+                        '        <li><a href="#tab-4" data-toggle="tab">Tab 4</a>\n' +
+                        '        </li>\n' +
+                        '    </ul>\n\n' +
+                        '    <!-- Tab panes -->\n' +
+                        '    <div class="tab-content well">\n' +
+                        '        <div class="tab-pane active" id="tab-1">Content 1</div>\n' +
+                        '        <div class="tab-pane" id="tab-2">Content 2</div>\n' +
+                        '        <div class="tab-pane" id="tab-3">Content 3</div>\n' +
+                        '        <div class="tab-pane" id="tab-4">Content 4</div>\n' +
+                        '    </div>    \n' +
+                        '    <!-- Move this line to the last line of js declaration area -->\n' +
+                        '    <script src="//cdn.rawgit.com/tonystar/bootstrap-hover-tabs/v3.1.1/bootstrap-hover-tabs.js"></script>\n';
     // HTML5 Tamplate
     
     snippets.html5template = '<!DOCTYPE html>\n' +

@@ -549,6 +549,7 @@ A collection of [Bootstrap](http://getbootstrap.com/) snippets for [Brackets](ht
 ### Tabs
     
     snippets.bs3tabs
+    snippets.tabhover
     
 ### HTML5 Tamplate
     
