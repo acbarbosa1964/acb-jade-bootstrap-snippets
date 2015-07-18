@@ -1,14 +1,15 @@
 {
-    "name": "acb-bootstrap-snippets",
-    "title": "ACB Bootstrap Snippets",
-    "description": "A collection of Bootstrap snippets for Brackets.",
-    "homepage": "https://github.com/acbarbosa1964/acb-bootstrap-snippets",
-    "version": "0.0.3",
+    "name": "acb-jade-bootstrap-snippets",
+    "title": "ACB Jade to Bootstrap Snippets",
+    "description": "A collection of Jade to Bootstrap snippets for Brackets.",
+    "homepage": "https://github.com/acbarbosa1964/acb-jade-bootstrap-snippets",
+    "version": "0.0.1",
     "author": "Antonio Carlos Barbosa <acbarbosa@gmail.com> (http://www.goodlearn.org)",
     "license": "MIT",
     "categories": "editing",
     "keywords": [
         "brackets",
+        "jade",
         "bootstrap",
         "snippets"
     ],
